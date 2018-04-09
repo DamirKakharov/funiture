@@ -1,0 +1,159 @@
+@import "primary/primary";
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.about {
+  position: relative;
+  width: 40%;
+  height: 100vh;
+  left: 0;
+  font-family: 'Oswald-Bold';
+  cursor: default;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  max-width: 360px;
+  margin: 0 auto;
+  top: 48px;
+  z-index: 1;
+}
+
+.logo {
+  height: 68px;
+
+  &__link {
+  width: 100%;
+  height: 100%;
+  }
+}
+
+.nav {
+  &__link {
+    padding: 8px 16px;
+    color: black;
+  }
+
+  &__link_filled {
+    background: $yellow;
+  }
+}
+
+.topic {
+  position: sticky;
+  max-width: 360px;
+  margin: 0 auto;
+  top: 33vh;
+
+  &__tittle {
+    margin: -25px 0px;
+    font-size: 64px;
+  }
+
+  &__subtittle {
+    margin: 0px;
+    font-size: 48px;
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: normal;
+    font-family: Georgia;
+    text-align: justify;
+    color: rgba(0, 0, 0, 0.64);
+  }
+}
+
+.right {
+  position: absolute;
+  width: 60%;
+  height: 100vh;
+  right: 0;
+  top: 0;
+}
+
+.slider {
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+}
+
+.slick-dots {
+  width: auto;
+  left: 28vw;
+  bottom: 50px;
+
+  li {
+    width: 12px;
+    height: 12px;
+    margin: 0 8px;
+  }
+
+  li button{
+    border: 3px solid #fff;
+    width: 12px;
+    height: 12px;
+  }
+
+  li button:before {
+    content: "";
+  }
+
+  li.slick-active button {
+    background: #ffffff;
+  }
+}
+
+.slick-dotted.slick-slider {
+  margin: 0;
+}
+
+.sticker {
+  position: absolute;
+  width: 272px;
+  height: 144px;
+  bottom: 16px;
+  left: -16px;
+  z-index: 4;
+  background: $yellow;
+}
+
+  .row {    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 9px 24px;
+  padding-bottom: 9px;
+  border-bottom: 1px dashed $underline;
+
+  &:first-child {
+    margin-top: 24px;
+  }
+
+  &__variable {
+    font-family: Georgia;
+    font-size: 13px;    
+    color: #66601A;
+    
+    &::after {
+      content: ":";
+    }
+  }
+
+  &__value {
+    font-family: 'Oswald-Bold';
+    font-size: 14px;
+    width: 900;
+    text-transform: uppercase;
+  }
+}

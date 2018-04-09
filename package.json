@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.1.2",
+    "gulp-watch": "^4.3.11",
+    "slick-carousel": "^1.8.1"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
